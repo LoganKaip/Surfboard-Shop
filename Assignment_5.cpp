@@ -63,22 +63,22 @@ using namespace std;
     {
         if (iTotalSmall != 0)
         {
-            cout << "Your ordered " << iTotalSmall << " small surfboards." << endl;
+            cout << "You ordered " << iTotalSmall << " small surfboards." << endl;
         }
-        else if (iTotalMedium != 0)
+        if (iTotalMedium != 0)
         {
-            cout << "Your ordered " << iTotalMedium << " medium surfboards." << endl;
+            cout << "You ordered " << iTotalMedium << " medium surfboards." << endl;
         }
-        else if (iTotalLarge != 0)
+        if (iTotalLarge != 0)
         {
-            cout << "Your ordered " << iTotalLarge << " large surfboards." << endl;
+            cout << "You ordered " << iTotalLarge << " large surfboards." << endl;
         }
-        //for github
-        else if (iTotalXLarge != 0)
+        if (iTotalXLarge != 0)
         {
-            cout << "Your ordered " << iTotalXLarge << " extra large surfboards." << endl;
+            cout << "You ordered " << iTotalXLarge << " extra large surfboards." << endl;
         }
-        else
+
+        if (iTotalSmall <= 0 && iTotalMedium <= 0 && iTotalLarge <= 0 && iTotalXLarge <= 0 )
         {
             cout << "Please buy a surfboard!" << endl;
         }
